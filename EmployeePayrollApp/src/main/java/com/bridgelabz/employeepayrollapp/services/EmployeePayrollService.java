@@ -10,31 +10,32 @@ import java.util.List;
 @Service
 public class EmployeePayrollService implements IEmployeePayrollService{
 
+    private List<EmployeePayrollData> empPayrollList = new ArrayList<>();
+
     public List<EmployeePayrollData> getEmployeePayrollData() {
-        List<EmployeePayrollData> empDataList = new ArrayList<>();
-        empDataList.add(new EmployeePayrollData(1, new EmployeePayrollDTO("Uday", 30000)));
-        return empDataList;
+        return empPayrollList;
     }
 
     public EmployeePayrollData getEmployeePayrollDataById(int empId) {
-        EmployeePayrollData empData = null;
-        empData = new EmployeePayrollData(empId, new EmployeePayrollDTO("Uday", 30000));
-        return empData;
+        return empPayrollList.get(empId-1);
     }
 
     public EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO empPayrollDTO) {
         EmployeePayrollData empData = null;
-        empData = new EmployeePayrollData(1, empPayrollDTO);
+        empData = new EmployeePayrollData(empPayrollList.size()+1, empPayrollDTO);
+        empPayrollList.add(empData);
         return empData;
     }
 
-    public EmployeePayrollData updateEmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
-        EmployeePayrollData empData = null;
-        empData = new EmployeePayrollData(1, employeePayrollDTO);
+    public EmployeePayrollData updateEmployeePayrollData(int empId, EmployeePayrollDTO employeePayrollDTO) {
+        EmployeePayrollData empData = this.getEmployeePayrollDataById(empId);
+        empData.setName(employeePayrollDTO.name);
+        empData.setSalary(employeePayrollDTO.salary);
+        empPayrollList.set(empId-1, empData);
         return empData;
     }
 
     public void deleteEmployeePayrollData(int empId) {
-
+        empPayrollList.remove(empId-1);
     }
 }
