@@ -1343,3 +1343,13 @@ Caused by: java.time.DateTimeException: Unable to obtain LocalDate from Temporal
 2025-02-28T16:19:05.929+05:30  INFO 5376 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 4.836 seconds (process running for 5.506)
 2025-02-28T16:19:05.934+05:30  INFO 5376 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in DEV Environment
 2025-02-28T16:19:05.938+05:30  INFO 5376 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : payroll_db user is Adarsh
+2025-02-28T17:05:12.419+05:30  INFO 18248 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 18248 (F:\CG_BridgeLabz_Training\SpringBoot-EmployeePayrollApp\EmployeePayrollApp\target\classes started by Lenovo in F:\CG_BridgeLabz_Training\SpringBoot-EmployeePayrollApp\EmployeePayrollApp)
+2025-02-28T17:05:12.435+05:30 DEBUG 18248 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-28T17:05:12.436+05:30  INFO 18248 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-02-28T17:05:18.624+05:30  WARN 18248 --- [EmployeePayrollApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28T17:05:19.092+05:30  INFO 18248 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 7.553 seconds (process running for 8.516)
+2025-02-28T17:05:19.096+05:30  INFO 18248 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in DEV Environment
+2025-02-28T17:05:19.097+05:30  INFO 18248 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : payroll_db user is Adarsh
+2025-02-28T17:05:56.987+05:30 DEBUG 18248 --- [EmployeePayrollApp] [http-nio-8080-exec-5] c.b.e.services.EmployeePayrollService    : Emp Data: 
+2025-02-28T17:05:59.043+05:30 DEBUG 18248 --- [EmployeePayrollApp] [http-nio-8080-exec-6] c.b.e.services.EmployeePayrollService    : Emp Data: 
+2025-02-28T17:06:01.016+05:30 DEBUG 18248 --- [EmployeePayrollApp] [http-nio-8080-exec-7] c.b.e.services.EmployeePayrollService    : Emp Data: 
