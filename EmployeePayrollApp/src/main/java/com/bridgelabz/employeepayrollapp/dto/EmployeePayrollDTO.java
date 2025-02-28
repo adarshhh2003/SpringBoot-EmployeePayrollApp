@@ -1,21 +1,29 @@
 package com.bridgelabz.employeepayrollapp.dto;
 
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
+import lombok.Data;
+import lombok.ToString;
 
-public class EmployeePayrollDTO {
+import java.util.List;
+
+public @ToString class EmployeePayrollDTO {
 
     @NotEmpty(message = "Name cannot be empty")
-    @Pattern(regexp = "^[A-Z][a-zA-Z]{2,}+\\s[A-Z][a-zA-Z]{2,}$", message = "The first and last name should start with capital letters separated by space")
+    @Pattern(regexp = "^[A-Z]{1}[a-zA-Z\\s]{2,}$", message = "Employee Name Invalid")
     public String name;
+
+    @Min(value = 500, message = "Min wage should be more than 500")
     public long salary;
 
-    public EmployeePayrollDTO(String name, long salary) {
-        this.name = name;
-        this.salary = salary;
-    }
+    public String gender;
 
-    public String toString() {
-        return "Name: " + name + " Salary: " + salary + "$";
-    }
+    public String startDate;
+
+    public String note;
+
+    public String profilePic;
+
+    public List<String> department;
 }
