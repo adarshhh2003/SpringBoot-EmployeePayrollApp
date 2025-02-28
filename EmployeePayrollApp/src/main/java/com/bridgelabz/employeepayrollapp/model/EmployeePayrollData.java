@@ -11,7 +11,7 @@ public @Data class EmployeePayrollData {
     private String name;
     private long salary;
     private String gender;
-    private String startDate;
+    private LocalDate startDate;
     private String note;
     private String profilePic;
     private List<String> departments;
