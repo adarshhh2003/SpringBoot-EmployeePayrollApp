@@ -15,3 +15,10 @@
 2025-03-01T12:54:22.285+05:30 DEBUG 14848 --- [EmployeePayrollApp] [http-nio-8080-exec-2] c.b.e.services.EmployeePayrollService    : Emp Data: 
 2025-03-01T12:54:27.740+05:30 DEBUG 14848 --- [EmployeePayrollApp] [http-nio-8080-exec-3] c.b.e.services.EmployeePayrollService    : Emp Data: 
 2025-03-01T12:54:44.400+05:30 DEBUG 14848 --- [EmployeePayrollApp] [http-nio-8080-exec-4] c.b.e.services.EmployeePayrollService    : Emp Data: 
+2025-03-01T13:58:03.938+05:30  INFO 796 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 796 (F:\CG_BridgeLabz_Training\SpringBoot-EmployeePayrollApp\EmployeePayrollApp\target\classes started by Lenovo in F:\CG_BridgeLabz_Training\SpringBoot-EmployeePayrollApp\EmployeePayrollApp)
+2025-03-01T13:58:03.946+05:30 DEBUG 796 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-01T13:58:03.946+05:30  INFO 796 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-03-01T13:58:08.928+05:30  WARN 796 --- [EmployeePayrollApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-01T13:58:09.436+05:30  INFO 796 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 6.068 seconds (process running for 6.684)
+2025-03-01T13:58:09.445+05:30  INFO 796 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in DEV Environment
+2025-03-01T13:58:09.445+05:30  INFO 796 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : payroll_db user is Adarsh
